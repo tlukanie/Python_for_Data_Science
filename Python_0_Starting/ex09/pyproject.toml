@@ -3,16 +3,17 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ft_package"  # Name of your package
-version = "0.0.1"    # Initial version
+name = "ft_package" 
+version = "0.0.1"  
 description = "A sample test package"
-readme = "README.md"  # Path to your README file
-license = { file = "LICENSE" }  # License file
+license = { text = "MIT" }
 authors = [
-    { name = "Your Name", email = "tlukanie@student.42prague.com"}
+    {name = "tlukanie", email = "tlukanie@student.42prague.com"}
 ]
-dependencies = []  # Add dependencies here, e.g., ["numpy", "pandas"]
+dependencies = []
+
 
 [project.urls]
 homepage = "https://github.com/tlukanie/ft_package"
-repository = "https://github.com/yourusername/ft_package"
+repository = "https://github.com/tlukanie/ft_package"
+

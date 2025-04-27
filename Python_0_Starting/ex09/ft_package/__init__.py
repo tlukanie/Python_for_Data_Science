@@ -1,3 +1,2 @@
 # Example: Import specific functions or classes
-from .module1 import function1
-from .module2 import function2
+from .ft_package import count_in_list
