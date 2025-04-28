@@ -8,8 +8,7 @@ version = "0.0.1"
 description = "A sample test package"
 license = { text = "MIT" }
 authors = [
-    {name = "tlukanie", email = "tlukanie@student.42prague.com"}
-]
+	{name = "tlukanie", email = "tlukanie@student.42prague.com"} ]
 dependencies = []
 
 
