@@ -4,7 +4,7 @@ import cv2
 
 def	ft_zoom(path):
 	print(ft_load(path))
-	np_new_obj = ft_load("animal.jpeg")
+	np_new_obj = ft_load(path)
 	# print(len(np_new_obj))
 	# print(f"coluns: {len(np_new_obj[0])}")
 	zoomed_obj = np_new_obj[100:500, 450:850]
