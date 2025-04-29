@@ -14,6 +14,8 @@ def main():
 		print(e)
 	except ValueError as e:
 		print(e)
+	except Exception as e:
+		print(e)
 
 
 if __name__ == "__main__":

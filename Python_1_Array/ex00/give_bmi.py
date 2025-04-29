@@ -59,6 +59,6 @@ def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
 			else:
 				el_flag = True
 				results.append(el_flag)
+		return results
 	except ValueError as e:
 			print(e)
-	return results
