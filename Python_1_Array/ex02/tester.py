@@ -4,7 +4,7 @@ import sys
 
 def main():
 	try:
-		print(ft_load("klandscape.jpg"))
+		print(ft_load("landscape.jpg"))
 	except Exception as e:
 		print(e)
 		sys.exit(1)
