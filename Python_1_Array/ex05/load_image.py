@@ -10,8 +10,10 @@ def ft_load(path: str) -> np.ndarray:
 		img = cv2.imread(path)
 		if img is None:
 			raise FileNotFound(f"The specified {path} file was not found or image is empty")
+		print(f"The shape of image is: {img.shape}")
 		img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 		img_arr = np.array(img_rgb)
+		print(img_arr)
 		return (img_arr)
 	except FileNotFound as e:
 		raise e
