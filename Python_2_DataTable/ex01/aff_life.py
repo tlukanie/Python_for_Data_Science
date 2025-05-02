@@ -13,7 +13,9 @@ def main():
     
     # Extract the data for Czech Republic, Pandas Series
     czech_life_exp = life_exp.loc["Czech Republic"]
-    
+    ukr_life_exp = life_exp.loc["Ukraine"]
+    ukr_y = ukr_life_exp.values
+
     # Extract years (columns) and life expectancy values
     years = czech_life_exp.index.astype(int)  # Convert column names (years) to integers
     print(czech_life_exp.index)
@@ -23,12 +25,14 @@ def main():
     #print(len(years), len(life_expectancy)) #arrays are of the same lenghth == they are aligned
 
     # Plot the data
-    plt.plot(years, life_expectancy) #(x, y)
+    plt.plot(years, life_expectancy, label='Czech Republic') #(x, y)
+    plt.plot(years, ukr_y, color='green', label='Ukraine')
     plt.title("Czech Republic Life Expectancy Projections")
     plt.xlabel("Year")
     plt.ylabel("Life Expectancy")
     plt.xticks(np.arange(1800, 2100, 40))
     plt.yticks(np.arange(30, 100, 10))
+    plt.legend()
     plt.show()
 
 if __name__ == "__main__":
