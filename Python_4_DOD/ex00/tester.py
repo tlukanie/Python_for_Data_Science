@@ -9,6 +9,5 @@ def main():
 	print("-----")
 	ft_statistics(toto="mean", tutu="median", tata="quartile")
 
-
 if __name__ == "__main__":
 	main()
