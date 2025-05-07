@@ -11,10 +11,15 @@ def main():
 	def g():
 		print ("g()")
 
-		
+	@callLimit(2)
+	def test(k, m):
+		print(k+m)
+
+
 	for i in range(3):
 		f()
 		g()
+		test(3,8)
 
 
 if __name__ == "__main__":
