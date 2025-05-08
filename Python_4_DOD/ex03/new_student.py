@@ -17,10 +17,10 @@ class Student:
 	# login = name[0] + surname
 	login : str = field(init=False) 
 	# Exclude from __init__
+	id : str = field(init=False)
 
 	def __post_init__(self):
+
 		# Generate the login using the name and surname
 		self.login = generate_login(self.name, self.surname)
-	
-	# field helps to dynamically generate the default values
-	id: str = field(default_factory=generate_id)
+		self.id = generate_id()
