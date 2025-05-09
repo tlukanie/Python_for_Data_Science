@@ -18,7 +18,7 @@ def ft_statistics(*args: tp.Any, **kwargs: tp.Any) -> None:
 
         # calculations
         mean = sum(lst) / lst_len
-        index = round(lst_len/2)
+        index = lst_len//2
 
         for value in dct.values():
             if value.lower() == "mean":
